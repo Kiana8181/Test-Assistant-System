@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{ec5c1650-3ac0-43d7-9c65-5f7f1f5b73b2}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Project</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Azmoon_History.cpp" />
+    <ClCompile Include="Correction.cpp" />
+    <ClCompile Include="Correction2.cpp" />
+    <ClCompile Include="EXAM.cpp" />
+    <ClCompile Include="Exam_student.cpp" />
+    <ClCompile Include="expositive.cpp" />
+    <ClCompile Include="Form1.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="manager.cpp" />
+    <ClCompile Include="Manager_main1.cpp" />
+    <ClCompile Include="Manage_Azmoon.cpp" />
+    <ClCompile Include="Manage_Azmoon2.cpp" />
+    <ClCompile Include="MExam.cpp" />
+    <ClCompile Include="multiple choice.cpp" />
+    <ClCompile Include="person.cpp" />
+    <ClCompile Include="Register_m.cpp" />
+    <ClCompile Include="Register_s.cpp" />
+    <ClCompile Include="Score.cpp" />
+    <ClCompile Include="student.cpp" />
+    <ClCompile Include="student_main.cpp" />
+    <ClCompile Include="True False.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Azmoon_History.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Correction.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Correction2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="EXAM.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Exam_student.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="expositive.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Form1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="manager.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Manager_main1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Manage_Azmoon.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Manage_Azmoon2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MExam.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="multiple choice.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="person.h" />
+    <ClInclude Include="Register_m.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Register_s.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Score.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="student.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="student_main.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="True False.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Azmoon_History.resx">
+      <DependentUpon>Azmoon_History.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Correction.resx">
+      <DependentUpon>Correction.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Correction2.resx">
+      <DependentUpon>Correction2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EXAM.resx">
+      <DependentUpon>EXAM.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exam_student.resx">
+      <DependentUpon>Exam_student.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expositive.resx">
+      <DependentUpon>expositive.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manager.resx">
+      <DependentUpon>manager.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_main1.resx">
+      <DependentUpon>Manager_main1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Azmoon.resx">
+      <DependentUpon>Manage_Azmoon.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_Azmoon2.resx">
+      <DependentUpon>Manage_Azmoon2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MExam.resx">
+      <DependentUpon>MExam.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="multiple choice.resx">
+      <DependentUpon>multiple choice.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register_m.resx">
+      <DependentUpon>Register_m.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register_s.resx">
+      <DependentUpon>Register_s.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Score.resx">
+      <DependentUpon>Score.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student_main.resx">
+      <DependentUpon>student_main.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="True False.resx">
+      <DependentUpon>True False.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
